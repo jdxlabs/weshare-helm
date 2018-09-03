@@ -1,0 +1,15 @@
+rbac:
+  ## If true, create & use RBAC resources
+  create: false
+
+  ## Ignored if rbac.create is true
+  serviceAccountName: datadog-agent
+
+tolerations: []
+
+kube-state-metrics:
+  rbac:
+    create: false
+
+    ## Ignored if rbac.create is true
+    serviceAccountName: kube-state-metrics
